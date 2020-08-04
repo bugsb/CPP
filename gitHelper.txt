@@ -1,0 +1,12 @@
+              git config –global user.name “your_username”
+              git config –global user.email “your_email”
+
+              1.] git init in the folder 
+              2.] git remote add origin  https://github.com/your_username/myproject.git
+              3.] git add.
+              4.] git commit
+              5.] git push origin master
+
+              $$ if any error git push/pull origin master --force
+
+              6.] provide email and pass
