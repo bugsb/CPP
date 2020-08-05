@@ -10,3 +10,7 @@
               $$ if any error git push/pull origin master --force
 
               6.] provide email and pass
+
+              7.] git push --set-upstream origin master
+
+              	 $$if any error try git push -u
