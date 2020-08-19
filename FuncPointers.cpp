@@ -22,3 +22,8 @@ int main()
     }
     );
 }
+
+/* 
+
+auto var = funName <==> void/type (*var)(int ,float ...etc) = funName
+*/

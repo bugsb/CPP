@@ -1,22 +1,20 @@
 #include <iostream>
-// #include <iterator> // for std::size
-void fun()
-{
-    std::cout<<"This is Fun";
-}
+#include <vector>
+#include <algorithm>
+using namespace std;
 
-
-void printVar(void (*newf)())
-{
-    newf();
-}
 int main()
 {
-   int arr[]{1,4,6,7};
-
-//    std::cout<<&arr[0]<<std::endl;
-//    std::cout<<arr<<std::endl;
-   auto var = fun;
-   printVar(fun);
-    return 0;
+    vector <int> arr = {2,5,8,3,2,77,32};
+    sort(arr.begin(),arr.end());
+    for (const int it:arr )
+    {
+        cout<<" "<<it;
+    }
+    cout<<endl;
+    sort(arr.rbegin(),arr.rend());
+    for (const int it:arr )
+    {
+        cout<<" "<<it;
+    }
 }
