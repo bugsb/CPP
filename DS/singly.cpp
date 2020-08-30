@@ -4,7 +4,7 @@ using namespace std;
 
 class node
 {   public:
-        
+
         int data;
         node *next;
 
@@ -16,11 +16,11 @@ class node
 };
 
 class linkList
-{   
+{
     public:
 
        node *head = nullptr;
-    
+
     void insert_at_beg(int data)
     {
         node *newNode = new node(data);
@@ -36,13 +36,13 @@ class linkList
         if (head == nullptr)
             {
                 head = newNode;
-            
+
             }else{
                     node *tmp = head;
                     while (tmp->next != nullptr)
                     tmp = tmp->next;
-                    tmp->next = newNode;   
-                } 
+                    tmp->next = newNode;
+                }
     }
 
     void pop_front()
@@ -55,22 +55,22 @@ class linkList
                     head = head->next;
                     delete tmp;
                 }
-            } 
+            }
 
-            void pop_end()
-            {
-                node *tmp =head;
-                node *tmp2 = head;
+    void pop_end()
+    {
+        node *tmp =head;
+        node *tmp2 = head;
 
-                while(tmp->next->next != nullptr)
-                    tmp = tmp->next;
-                
-                tmp2 = tmp->next->next;
-                tmp->next = nullptr;
-                delete tmp2;
+        while(tmp->next->next != nullptr)
+            tmp = tmp->next;
+
+        tmp2 = tmp->next->next;
+        tmp->next = nullptr;
+        delete tmp2;
 
 
-            }            
+    }
 
     void  display()
     {
@@ -80,6 +80,8 @@ class linkList
             cout<<tmp->data<<"->";
             tmp = tmp->next;
         }
+
+        cout<<endl;
     }
 
 };
@@ -100,7 +102,7 @@ int main()
     l.inset_at_end(92);
     l.pop_end();
     l.insert_at_beg(61);
-    
+
     l.display();
 
     return 0;

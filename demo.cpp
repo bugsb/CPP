@@ -1,20 +1,20 @@
-#include <iostream>
+#include<string>
+#include<iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 int main()
-{
-    vector <int> arr = {2,5,8,3,2,77,32};
-    sort(arr.begin(),arr.end());
-    for (const int it:arr )
-    {
-        cout<<" "<<it;
-    }
-    cout<<endl;
-    sort(arr.rbegin(),arr.rend());
-    for (const int it:arr )
-    {
-        cout<<" "<<it;
-    }
+
+{	//const string cmd = "echo 'hi there' ";
+	
+	std::vector<int> vec;
+
+
+
+	cout<<"Hello World";
+	// system("echo 'hi there man   ola' ");
+	std::cout<<"this is me";
+
+
+	return 0;
 }
