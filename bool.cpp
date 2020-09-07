@@ -14,6 +14,7 @@ int main()
 
     cout << true << endl;
     cout << false << endl;
+    std::cout<< true;
 
     return 0;
 }

@@ -7,7 +7,7 @@ public:
         if(numRows <1)
             return traingle; 
         
-        vector<int> firstRow;
+        vector<int> firstRow;vector<char>& 
         firstRow.push_back(1);
         traingle.push_back(firstRow);
         
