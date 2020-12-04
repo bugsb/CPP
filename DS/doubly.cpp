@@ -54,9 +54,7 @@ namespace helper{
                 }
 }
 class doubly
-{   private:
-            
-
+dy{   
     public:
 
     node *head = nullptr;
@@ -134,8 +132,8 @@ class doubly
                 printError();
                 return;
             }
-            predecessor = iterator;
-            iterator = iterator->next;
+        predecessor = iterator;
+        iterator = iterator->next;
 
         }  
         
@@ -145,9 +143,9 @@ class doubly
                 delete iterator;
                 return;
             }
-            predecessor->next = iterator->next;
-            iterator->next->prev = iterator->prev;
-            delete iterator;
+        predecessor->next = iterator->next;
+        iterator->next->prev = iterator->prev;
+        delete iterator;
     }
 
         void reverse()
@@ -171,19 +169,19 @@ class doubly
 
 int main()
 {
-    doubly list;
-    list.pushFront(5);
-    list.pushFront(4);
-    list.pushFront(0);
-    list.pushBack(8);
-    list.pushBack(9);
-    list.pushFront(1);
-    list.searchAndDel(5);
-    list.pushBack(6);
-    list.searchAndDel(6);
-    list.searchAndDel(1);
-    list.display();
-    list.reverse();
+    doubly *list = new doubly;
+    list->pushFront(5);
+    list->pushFront(4);
+    list->pushFront(0);
+    list->pushBack(8);
+    list->pushBack(9);
+    list->pushFront(1);
+    list->searchAndDel(5);
+    list->pushBack(6);
+    list->searchAndDel(6);
+    list->searchAndDel(1);
+    list->display();
+    list->reverse();
 
     
 
